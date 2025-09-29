@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:massaging_ui_design/screen/auth_screen/calling_screen/calling.dart';
 import 'package:massaging_ui_design/utils/assets_image.dart';
 import 'package:massaging_ui_design/utils/helper_function.dart';
 import 'package:massaging_ui_design/widgets/custom_text.dart';
+
+import '../../calls/calling_screen/incoming_call.dart';
 
 class FriendMassageView extends StatefulWidget {
   const FriendMassageView({super.key, required this.userData});
@@ -20,7 +21,8 @@ class _FriendMassageViewState extends State<FriendMassageView> {
     return Scaffold(
       appBar: AppBar(
         // leading: IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
-        title: Row(
+        title:
+        Row(
           mainAxisSize: MainAxisSize.min,
           children: [
             Image.asset(widget.userData['imagePath'], width: 42, height: 42),
@@ -37,7 +39,7 @@ class _FriendMassageViewState extends State<FriendMassageView> {
         actions: [
           IconButton(
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => CallingScreen(),));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => IncomingCall(),));
             },
             icon: Image.asset(AssetsImages.callIcon),
           ),

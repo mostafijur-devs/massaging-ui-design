@@ -36,7 +36,7 @@ class _MassagingScreenState extends State<MassagingScreen> {
       ],
     ),),
 
-      bottomNavigationBar: _bottomNavigation(),
+      // bottomNavigationBar: _bottomNavigation(),
     ));
   }
 
@@ -109,7 +109,8 @@ class _MassagingScreenState extends State<MassagingScreen> {
 ///all user chat list view
   Widget _userChatList() {
     return Expanded(
-      child: Container(
+      child:
+      Container(
         padding: EdgeInsets.symmetric(vertical: 20),
         decoration: BoxDecoration(
           color: Colors.white,
@@ -124,7 +125,7 @@ class _MassagingScreenState extends State<MassagingScreen> {
             final data = AssetsImages.imageDataList[index];
             return Dismissible(
               key: UniqueKey(),
-              direction: DismissDirection.endToStart,
+              direction: DismissDirection.none,
               background:Row(
                 mainAxisAlignment:MainAxisAlignment.end,
                 children: [

@@ -1,22 +1,19 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:massaging_ui_design/utils/assets_image.dart';
-import 'package:massaging_ui_design/utils/helper_function.dart';
 import 'package:massaging_ui_design/widgets/custom_text.dart';
 import 'package:slide_to_act/slide_to_act.dart';
 
 import '../../../widgets/custom_elevated_button.dart';
 
-class CallingScreen extends StatefulWidget {
-  const CallingScreen({super.key});
+class IncomingCall extends StatefulWidget {
+  const IncomingCall({super.key});
 
   @override
-  State<CallingScreen> createState() => _CallingScreenState();
+  State<IncomingCall> createState() => _IncomingCallState();
 }
 
-class _CallingScreenState extends State<CallingScreen> {
+class _IncomingCallState extends State<IncomingCall> {
   double _dragPosition = 0.0;
   final double _containerWidth = 250.0;
   final double _iconSize = 50.0;

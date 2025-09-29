@@ -71,7 +71,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 TextFormField(
                   decoration: InputDecoration(
                     border: UnderlineInputBorder(borderSide: BorderSide(width: 2.sw)),
-                    label: CustomText(text: 'Your email'),
+                    label: CustomText(text: 'Email'),
                     hint: CustomText(text: 'Please enter your email'),
                     contentPadding: EdgeInsets.symmetric(vertical: 20.r),
                   ),
@@ -89,8 +89,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 TextFormField(
                   decoration: InputDecoration(
                     border: UnderlineInputBorder(),
-                    label: CustomText(text: 'Your email'),
-                    hint: CustomText(text: 'Please enter your email'),
+                    label: CustomText(text: 'Password'),
+                    hint: CustomText(text: 'Please enter your Password'),
                     contentPadding: EdgeInsets.symmetric(vertical: 20),
                   ),
                   validator: (value) {

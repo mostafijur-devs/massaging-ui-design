@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:massaging_ui_design/screen/auth_screen/calling_screen/calling.dart';
 import 'package:massaging_ui_design/screen/auth_screen/massage_screen/massaging_screen.dart';
+import 'package:massaging_ui_design/screen/home_screen.dart';
 import 'package:massaging_ui_design/screen/splash_screen.dart';
 
 void main() {

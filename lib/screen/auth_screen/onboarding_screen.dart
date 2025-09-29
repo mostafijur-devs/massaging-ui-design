@@ -48,23 +48,26 @@ class OnboardingScreen extends StatelessWidget {
               child: ListView(
                 children: [
                   Center(child: Image.asset(AssetsImages.appBanner)),
+                  SizedBox(height: 20.h),
+
                   CustomText(
                     text: 'Connect friends easily & quickly',
                     textStyle: GoogleFonts.abhayaLibre(
                       fontWeight: FontWeight.bold,
-                      fontSize: 68,
+                      fontSize: 64,
                       color: Colors.white,
                     ),
                   ),
 
+
                   SizedBox(height: 20.h),
-                  SizedBox(height: 10.h),
                   CustomText(
                     text:
                         'Our chat app is the perfect way to stay \nconnected with friends and family.',
+                    color: Colors.white.withValues(alpha: 0.5),
                   ),
 
-                  SizedBox(height: 20.h),
+                  SizedBox(height: 30.h),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
